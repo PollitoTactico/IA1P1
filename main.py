@@ -10,7 +10,7 @@ clasificador = GolpeClassifier()
 clasificador.cargar_modelo("datos/modelo.pkl")  # Usa el modelo entrenado
 
 # Cambia este video por el que quieras probar
-video = cv2.VideoCapture("videos/bump.mp4")
+video = cv2.VideoCapture("Videos/remate.mp4")
 
 while True:
     ret, frame = video.read()
