@@ -1,4 +1,5 @@
 import pickle
+from sklearn.svm import SVC
 
 class GolpeClassifier:
     def __init__(self):
@@ -6,7 +7,7 @@ class GolpeClassifier:
         self.encoder = None
 
     def entrenar(self, X, y):
-        from sklearn.svm import SVC
+        
         self.modelo = SVC(kernel='linear')
         self.modelo.fit(X, y)
 

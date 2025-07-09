@@ -66,7 +66,7 @@ df.to_csv(CSV_PATH, index=False)
 print(f"✅ Dataset guardado en: {CSV_PATH}")
 
 # Entrenar modelo
-print("🧠 Entrenando modelo...")
+print("Entrenando modelo...")
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
@@ -83,4 +83,4 @@ import pickle
 with open(MODEL_PATH, "wb") as f:
     pickle.dump((clasificador.modelo, le), f)
 
-print(f"✅ Modelo guardado en: {MODEL_PATH}")
+print(f" Modelo guardado en: {MODEL_PATH}")
