@@ -1,12 +1,12 @@
 
 ---
 
-## 🧠 Resumen técnico
+## README 
 
-### 🖥️ Lenguaje
+### Lenguaje
 - **Python 3.12**
 
-### 📦 Librerías utilizadas
+### Librerías utilizadas
 
 | Librería         | Uso |
 |------------------|-----|
@@ -21,7 +21,7 @@
 - **SVM (Support Vector Machine)** con kernel lineal (`sklearn.svm.SVC(kernel="linear")`)
 - Ideal para clasificación supervisada de 3 clases: `mancheta`, `voleo`, `remate`
 
-### 🧩 Flujo del sistema
+### Flujo del sistema
 
 1. **Entrenamiento (`entrenamiento.py`)**
    - Detecta landmarks con MediaPipe y los convierte a vectores.
@@ -41,9 +41,19 @@
 
 ---
 
-## 📦 Cómo usar
+## Cómo usar
 
 ### 1. Instalar dependencias
-
 ```bash
 pip install -r requirements.txt
+```
+### 2. Entrenar una sola vez
+```bash
+python entrenamiento.py
+```
+### 3. Ejecutar interfaz
+```bash
+python main_flet.py
+```
+
+
